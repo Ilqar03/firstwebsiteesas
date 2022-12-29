@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li,
+.navlink {
+    list-style: none;
+    text-decoration: none;
+}
+
+nav {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #212529;
+
+    .start_bootstrap {
+        p {
+            .navlink {
+                color: white;
+                font-size: 20px;
+            }
+        }
+    }
+    .hamburger{
+        display: none;
+        button{
+            width: 56px;
+            height: 40px;
+            border: 1px solid #ffffff8c;
+            background-color: #212529;
+            i{
+                font-size: 20px;
+                color: #ffffff8c;
+            }
+        }
+        @media only screen and (max-width: 990px) {
+          display: block;
+          }
+          
+    }
+
+    .nav_item {
+        ul {
+            display: flex;
+            gap: 10px;
+            li{
+                .navlink{
+                    display:flex ;
+                    gap: 5px;
+                    color: #ffffff8c;
+                    &:hover{
+                        color: white;
+                    }
+                }
+            }
+        }
+        @media only screen and (max-width: 990px) {
+            display: none;
+          }
+          
+    }
+}
